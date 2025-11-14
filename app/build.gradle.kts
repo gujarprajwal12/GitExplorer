@@ -9,7 +9,7 @@ plugins {
 
 android {
     namespace = "com.psg.gitexplorer"
-    compileSdk = 36  // Fixed: removed invalid syntax
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.psg.gitexplorer"
@@ -89,6 +89,5 @@ dependencies {
     implementation(libs.glide)
     ksp(libs.glide.compiler)
 
-
-
+    
 }

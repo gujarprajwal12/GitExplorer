@@ -28,9 +28,12 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         _binding = FragmentSearchBinding.bind(view)
 
         adapter = RepositoryAdapter { repo ->
-            val action = com.psg.gitexplorer.presentation.search.SearchFragmentDirections.actionSearchToDetails(repo)
-            findNavController().navigate(action)
+            val bundle = Bundle().apply { putParcelable("repo", repo) }
+            findNavController().navigate(R.id.detailsFragment, bundle)
         }
+
+
+
 
 
 

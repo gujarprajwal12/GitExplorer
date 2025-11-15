@@ -33,10 +33,6 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         }
 
 
-
-
-
-
         binding.rvRepos.layoutManager = LinearLayoutManager(requireContext())
         binding.rvRepos.adapter = adapter
 

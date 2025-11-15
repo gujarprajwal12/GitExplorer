@@ -5,12 +5,12 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Repository(
-    val id: Long,
-    val name: String,
-    val full_name: String,
-    val description: String?,
-    val stargazers_count: Int,
-    val forks_count: Int,
-    val language: String?,
-    val owner: Owner
+    val id: Long = 0,
+    val name: String = "",
+    val full_name: String = "",
+    val description: String? = "",
+    val stargazers_count: Int = 0,
+    val forks_count: Int = 0,
+    val language: String? = "",
+    val owner: Owner = Owner()
 ) : Parcelable
